@@ -6,13 +6,7 @@ public class Maelle extends Hero {
         pouvoirs.add(new FrappeLunaire());
         pouvoirs.add(new PasDOmbre());
         pouvoirs.add(new LameSpectrale());
+        pouvoirs.add(new Esquive());
     }
 
-    @Override
-    public String toString() {
-        return "Maelle{" +
-                "pouvoirs=" + pouvoirs +
-                ", aUtilisePotion=" + aUtilisePotion +
-                '}';
-    }
 }

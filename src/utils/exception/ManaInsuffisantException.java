@@ -1,4 +1,7 @@
 package utils.exception;
 
-public class ManaInsuffisantException {
+public class ManaInsuffisantException extends Exception {
+    public ManaInsuffisantException(String message) {
+        super(message);
+    }
 }

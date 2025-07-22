@@ -1,10 +1,11 @@
 package business;
 
-public class Monoco extends Ennemi {
+public class Monoco extends Hero {
     private boolean aTransforme = false;
 
-    public Monoco() {
-        super("Monoco", 100, 20, 8);
+    public Monoco(String nom) {
+        super(nom, 100, 20, 8, 30);
+        pouvoirs.add(new Esquive());
     }
 
     @Override
@@ -17,5 +18,6 @@ public class Monoco extends Ennemi {
         }
         int degats = getAttaque() - cible.getDefense();
         if (degats > 0) cible.prendreDegat(degats);
+        else System.out.println(getNom() + " n'a pas réussi à infliger des dégâts.");
     }
 }
